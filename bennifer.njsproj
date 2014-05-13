@@ -1,550 +1,97 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <PropertyGroup>
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-        <SchemaVersion>2.0</SchemaVersion>
-        <ProjectGuid>{b79f737b-fde2-470e-8580-b86beee105e9}</ProjectGuid>
-        <ProjectHome />
-        <ProjectView>ShowAllFiles</ProjectView>
-        <StartupFile>server.js</StartupFile>
-        <WorkingDirectory>.</WorkingDirectory>
-        <OutputPath>.</OutputPath>
-        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
-        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
-        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    </PropertyGroup>
-    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
-    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
-    <ItemGroup>
-        <Content Include="package.json" />
-        <Content Include="README.md" />
-        <Compile Include="server.js" />
-        <Content Include="views\callback.html" />
-        <Content Include="views\index.html" />
-        <Content Include="obj\Debug\instagram-real-time.njsproj.FileListAbsolute.txt" />
-        <Content Include="obj\Debug\package.json" />
-        <Content Include="obj\Debug\README.md" />
-        <Compile Include="obj\Debug\server.js" />
-        <Content Include="obj\Debug\views\callback.html" />
-        <Content Include="obj\Debug\views\index.html" />
-        <Content Include="obj\Debug\public\css\app.css" />
-        <Content Include="obj\Debug\public\css\app.min.css" />
-        <Content Include="obj\Debug\public\images\bg-footer.png" />
-        <Content Include="obj\Debug\public\images\bt-close.png" />
-        <Content Include="obj\Debug\public\images\gh-logo.png" />
-        <Content Include="obj\Debug\public\images\logo-square.png" />
-        <Content Include="obj\Debug\public\images\logo.png" />
-        <Content Include="obj\Debug\public\images\lolla_logo-2.png" />
-        <Content Include="obj\Debug\public\images\sprite-social.png" />
-        <Content Include="obj\Debug\public\images\bg.jpg" />
-        <Content Include="obj\Debug\public\images\logo.jpg" />
-        <Content Include="obj\Debug\public\images\mob-top-fill.jpg" />
-        <Content Include="obj\Debug\public\images\old-logo.jpg" />
-        <Content Include="obj\Debug\public\images\top-fill.jpg" />
-        <Content Include="obj\Debug\public\images\favicon.ico" />
-        <Compile Include="obj\Debug\public\js\app.js" />
-        <Compile Include="obj\Debug\public\js\app.min.js" />
-        <Compile Include="obj\Debug\public\js\handlebarsjs.1.0.min.js" />
-        <Compile Include="obj\Debug\public\js\jquery.1.9.min.js" />
-        <Compile Include="obj\Debug\public\js\socket.io.min.js" />
-        <Content Include="obj\Debug\public\images\icons\ico-em.png" />
-        <Content Include="obj\Debug\public\images\icons\ico-fb.png" />
-        <Content Include="obj\Debug\public\images\icons\ico-g.png" />
-        <Content Include="obj\Debug\public\images\icons\ico-tt.png" />
-        <Content Include="public\css\app.css" />
-        <Content Include="public\css\app.min.css" />
-        <Content Include="public\images\bg-footer.png" />
-        <Content Include="public\images\bt-close.png" />
-        <Content Include="public\images\gh-logo.png" />
-        <Content Include="public\images\logo-square.png" />
-        <Content Include="public\images\logo.png" />
-        <Content Include="public\images\lolla_logo-2.png" />
-        <Content Include="public\images\sprite-social.png" />
-        <Content Include="public\images\bg.jpg" />
-        <Content Include="public\images\logo.jpg" />
-        <Content Include="public\images\mob-top-fill.jpg" />
-        <Content Include="public\images\old-logo.jpg" />
-        <Content Include="public\images\top-fill.jpg" />
-        <Content Include="public\images\favicon.ico" />
-        <Compile Include="public\js\app.js" />
-        <Compile Include="public\js\app.min.js" />
-        <Compile Include="public\js\handlebarsjs.1.0.min.js" />
-        <Compile Include="public\js\jquery.1.9.min.js" />
-        <Compile Include="public\js\socket.io.min.js" />
-        <Content Include="public\images\icons\ico-em.png" />
-        <Content Include="public\images\icons\ico-fb.png" />
-        <Content Include="public\images\icons\ico-g.png" />
-        <Content Include="public\images\icons\ico-tt.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Folder Include="obj" />
-        <Folder Include="obj\Debug" />
-        <Folder Include="obj\Debug\bin" />
-        <Folder Include="obj\Debug\node_modules" />
-        <Folder Include="obj\Debug\node_modules\.bin" />
-        <Folder Include="obj\Debug\node_modules\express" />
-        <Folder Include="obj\Debug\node_modules\express\benchmarks" />
-        <Folder Include="obj\Debug\node_modules\express\bin" />
-        <Folder Include="obj\Debug\node_modules\express\lib" />
-        <Folder Include="obj\Debug\node_modules\express\lib\router" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\buffer-crc32" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\buffer-crc32\tests" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\commander" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\commander\node_modules" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\commander\node_modules\keypress" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\lib" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\lib\middleware" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\basic-auth-connect" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\bytes" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\compression" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\compression\node_modules" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\compression\node_modules\compressible" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\compression\node_modules\negotiator" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\compression\node_modules\negotiator\examples" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\compression\node_modules\negotiator\lib" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\compression\node_modules\negotiator\test" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\connect-timeout" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\cookie-parser" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\cookie-parser\lib" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\cookie-parser\node_modules" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\cookie-parser\node_modules\cookie" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\cookie-parser\node_modules\cookie\test" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\cookie-parser\test" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\csurf" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\csurf\node_modules" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\csurf\node_modules\uid2" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\errorhandler" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\errorhandler\public" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\express-session" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\express-session\node_modules" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\express-session\node_modules\cookie" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\express-session\node_modules\cookie\test" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\express-session\node_modules\debug" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\express-session\node_modules\debug\lib" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\express-session\node_modules\uid2" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\express-session\node_modules\utils-merge" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\express-session\session" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\express-session\test" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\method-override" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\morgan" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\examples" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\node_modules" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\node_modules\readable-stream" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\node_modules\readable-stream\lib" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\node_modules\readable-stream\node_modules" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\node_modules\readable-stream\node_modules\core-util-is" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\node_modules\readable-stream\node_modules\core-util-is\lib" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\node_modules\readable-stream\node_modules\inherits" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\node_modules\readable-stream\node_modules\isarray" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\node_modules\readable-stream\node_modules\isarray\build" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\node_modules\readable-stream\node_modules\string_decoder" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\node_modules\stream-counter" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\node_modules\stream-counter\test" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\test" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\test\fixture" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\test\fixture\file" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\test\fixture\http" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\test\fixture\http\encoding" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\test\fixture\http\no-filename" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\test\fixture\http\preamble" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\test\fixture\http\special-chars-in-filename" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\test\fixture\http\workarounds" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\test\fixture\js" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\multiparty\test\standalone" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\pause" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\qs" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\raw-body" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\response-time" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\serve-index" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\serve-index\node_modules" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\serve-index\node_modules\batch" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\serve-index\node_modules\negotiator" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\serve-index\node_modules\negotiator\examples" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\serve-index\node_modules\negotiator\lib" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\serve-index\node_modules\negotiator\test" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\serve-index\public" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\serve-index\public\icons" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\serve-static" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\static-favicon" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\connect\node_modules\vhost" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\cookie" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\cookie\test" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\cookie-signature" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\debug" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\debug\lib" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\fresh" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\merge-descriptors" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\methods" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\mkdirp" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\mkdirp\examples" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\mkdirp\test" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\range-parser" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\send" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\send\lib" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\send\node_modules" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\send\node_modules\mime" />
-        <Folder Include="obj\Debug\node_modules\express\node_modules\send\node_modules\mime\types" />
-        <Folder Include="obj\Debug\node_modules\instagram-node-lib" />
-        <Folder Include="obj\Debug\node_modules\instagram-node-lib\lib" />
-        <Folder Include="obj\Debug\node_modules\instagram-node-lib\test" />
-        <Folder Include="obj\Debug\node_modules\jade" />
-        <Folder Include="obj\Debug\node_modules\jade\bin" />
-        <Folder Include="obj\Debug\node_modules\jade\lib" />
-        <Folder Include="obj\Debug\node_modules\jade\lib\nodes" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\character-parser" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\commander" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\.bin" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\bin" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\lib" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\async" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\async\lib" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\optimist" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\optimist\example" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\optimist\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\optimist\node_modules\wordwrap" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\optimist\node_modules\wordwrap\example" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\optimist\node_modules\wordwrap\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\optimist\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\optimist\test\_" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\source-map" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\source-map\build" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\source-map\lib" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\source-map\lib\source-map" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\source-map\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\source-map\node_modules\amdefine" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\source-map\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\source-map\test\source-map" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\uglify-to-browserify" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\node_modules\uglify-to-browserify\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\test\compress" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\node_modules\uglify-js\tools" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\constantinople\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\mkdirp" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\mkdirp\examples" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\mkdirp\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp\examples" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp\node_modules\minimatch" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp\node_modules\minimatch\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp\node_modules\minimatch\node_modules\lru-cache" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp\node_modules\minimatch\node_modules\lru-cache\lib" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp\node_modules\minimatch\node_modules\lru-cache\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp\node_modules\minimatch\node_modules\sigmund" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp\node_modules\minimatch\node_modules\sigmund\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp\node_modules\minimatch\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp\test\bed" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp\test\bed\root_dir1" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp\test\bed\root_dir1\root_dir1_subdir1" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\monocle\node_modules\readdirp\test\bed\root_dir2" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\lib" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\.bin" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\css" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\css\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\css\node_modules\css-parse" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\css\node_modules\css-stringify" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\promise" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\promise\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\promise\node_modules\is-promise" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\bin" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\lib" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\optimist" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\optimist\example" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\optimist\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\optimist\node_modules\wordwrap" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\optimist\node_modules\wordwrap\example" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\optimist\node_modules\wordwrap\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\optimist\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\optimist\test\_" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\source-map" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\source-map\build" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\source-map\lib" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\source-map\lib\source-map" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\source-map\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\source-map\node_modules\amdefine" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\source-map\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\node_modules\source-map\test\source-map" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\test\compress" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\transformers\node_modules\uglify-js\tools" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\.bin" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\bin" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\lib" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\async" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\async\lib" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\optimist" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\optimist\example" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\optimist\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\optimist\node_modules\wordwrap" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\optimist\node_modules\wordwrap\example" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\optimist\node_modules\wordwrap\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\optimist\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\optimist\test\_" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\source-map" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\source-map\build" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\source-map\lib" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\source-map\lib\source-map" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\source-map\node_modules" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\source-map\node_modules\amdefine" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\source-map\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\source-map\test\source-map" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\uglify-to-browserify" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\node_modules\uglify-to-browserify\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\test" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\test\compress" />
-        <Folder Include="obj\Debug\node_modules\jade\node_modules\with\node_modules\uglify-js\tools" />
-        <Folder Include="obj\Debug\node_modules\request" />
-        <Folder Include="obj\Debug\node_modules\request\lib" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\aws-sign2" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\forever-agent" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\form-data" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\form-data\lib" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\form-data\node_modules" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\form-data\node_modules\async" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\form-data\node_modules\async\lib" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\form-data\node_modules\combined-stream" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\form-data\node_modules\combined-stream\lib" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\form-data\node_modules\combined-stream\node_modules" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\form-data\node_modules\combined-stream\node_modules\delayed-stream" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\form-data\node_modules\combined-stream\node_modules\delayed-stream\lib" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\form-data\node_modules\combined-stream\node_modules\delayed-stream\test" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\form-data\node_modules\combined-stream\node_modules\delayed-stream\test\integration" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\form-data\node_modules\combined-stream\test" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\form-data\node_modules\combined-stream\test\fixture" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\form-data\node_modules\combined-stream\test\integration" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\example" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\images" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\lib" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\boom" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\boom\images" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\boom\lib" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\boom\test" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\cryptiles" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\cryptiles\lib" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\cryptiles\test" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\hoek" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\hoek\images" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\hoek\lib" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\hoek\test" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\hoek\test\modules" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\sntp" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\sntp\examples" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\sntp\lib" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\node_modules\sntp\test" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\hawk\test" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\lib" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\asn1" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\asn1\lib" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\asn1\lib\ber" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\asn1\tst" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\asn1\tst\ber" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\assert-plus" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\ctype" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\ctype\man" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\ctype\man\man3ctype" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\ctype\tools" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\ctype\tst" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\ctype\tst\ctf" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\ctype\tst\ctio" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\ctype\tst\ctio\float" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\ctype\tst\ctio\int" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\ctype\tst\ctio\uint" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\http-signature\node_modules\ctype\tst\ctype" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\json-stringify-safe" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\mime" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\mime\types" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\node-uuid" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\node-uuid\benchmark" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\node-uuid\test" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\oauth-sign" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\qs" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\tough-cookie" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\tough-cookie\lib" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\tough-cookie\node_modules" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\tough-cookie\node_modules\punycode" />
-        <Folder Include="obj\Debug\node_modules\request\node_modules\tunnel-agent" />
-        <Folder Include="obj\Debug\node_modules\socket.io" />
-        <Folder Include="obj\Debug\node_modules\socket.io\benchmarks" />
-        <Folder Include="obj\Debug\node_modules\socket.io\lib" />
-        <Folder Include="obj\Debug\node_modules\socket.io\lib\stores" />
-        <Folder Include="obj\Debug\node_modules\socket.io\lib\transports" />
-        <Folder Include="obj\Debug\node_modules\socket.io\lib\transports\websocket" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\base64id" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\base64id\lib" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\policyfile" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\policyfile\doc" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\policyfile\examples" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\policyfile\lib" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\policyfile\tests" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\policyfile\tests\ssl" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\redis" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\redis\benches" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\redis\benches\stress" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\redis\benches\stress\pubsub" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\redis\benches\stress\rpushblpop" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\redis\benches\stress\speed" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\redis\examples" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\redis\lib" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\redis\lib\parser" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\bin" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\components" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\components\component-bind" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\components\component-emitter" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\components\component-json" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\components\component-json-fallback" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\components\learnboost-engine.io-client" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\components\learnboost-engine.io-client\lib" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\components\learnboost-engine.io-client\lib\transports" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\components\learnboost-socket.io-protocol" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\components\timoxley-to-array" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\components\visionmedia-debug" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\dist" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\transports" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\adobe" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\adobe\net" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\adobe\net\proxies" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\gsolo" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\gsolo\encryption" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\hurlant" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\hurlant\crypto" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\hurlant\crypto\cert" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\hurlant\crypto\hash" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\hurlant\crypto\prng" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\hurlant\crypto\rsa" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\hurlant\crypto\symmetric" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\hurlant\crypto\tests" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\hurlant\crypto\tls" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\hurlant\math" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\hurlant\util" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\lib\vendor\web-socket-js\flash-src\com\hurlant\util\der" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\.bin" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\active-x-obfuscator" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\active-x-obfuscator\node_modules" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\active-x-obfuscator\node_modules\zeparser" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\uglify-js" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\uglify-js\bin" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\uglify-js\lib" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\uglify-js\test" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\uglify-js\test\unit" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\uglify-js\test\unit\compress" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\uglify-js\test\unit\compress\expected" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\uglify-js\test\unit\compress\test" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\uglify-js\tmp" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\bench" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\bin" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\doc" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\examples" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\examples\fileapi" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\examples\fileapi\public" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\examples\serverstats" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\examples\serverstats\public" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\examples\serverstats-express_3" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\examples\serverstats-express_3\public" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\lib" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\node_modules" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\node_modules\commander" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\node_modules\commander\lib" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\node_modules\nan" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\node_modules\options" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\node_modules\options\lib" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\node_modules\options\test" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\node_modules\options\test\fixtures" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\node_modules\tinycolor" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\src" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\test" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\ws\test\fixtures" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\xmlhttprequest" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\xmlhttprequest\example" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\xmlhttprequest\lib" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\node_modules\xmlhttprequest\tests" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\test" />
-        <Folder Include="obj\Debug\node_modules\socket.io\node_modules\socket.io-client\test\node" />
-        <Folder Include="obj\Debug\public" />
-        <Folder Include="obj\Debug\public\css" />
-        <Folder Include="obj\Debug\public\images" />
-        <Folder Include="obj\Debug\public\images\icons" />
-        <Folder Include="obj\Debug\public\js" />
-        <Folder Include="obj\Debug\views" />
-        <Folder Include="public" />
-        <Folder Include="public\css" />
-        <Folder Include="public\images" />
-        <Folder Include="public\images\icons" />
-        <Folder Include="public\js" />
-        <Folder Include="views" />
-    </ItemGroup>
-    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
-    <ProjectExtensions>
-        <VisualStudio>
-          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
-            <WebProjectProperties>
-              <UseIIS>False</UseIIS>
-              <AutoAssignPort>True</AutoAssignPort>
-              <DevelopmentServerPort>0</DevelopmentServerPort>
-              <DevelopmentServerVPath>/</DevelopmentServerVPath>
-              <IISUrl>http://localhost:48022/</IISUrl>
-              <NTLMAuthentication>False</NTLMAuthentication>
-              <UseCustomServer>True</UseCustomServer>
-              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
-              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
-            </WebProjectProperties>
-          </FlavorProperties>
-          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
-            <WebProjectProperties>
-              <StartPageUrl>
-              </StartPageUrl>
-              <StartAction>CurrentPage</StartAction>
-              <AspNetDebugging>True</AspNetDebugging>
-              <SilverlightDebugging>False</SilverlightDebugging>
-              <NativeDebugging>False</NativeDebugging>
-              <SQLDebugging>False</SQLDebugging>
-              <ExternalProgram>
-              </ExternalProgram>
-              <StartExternalURL>
-              </StartExternalURL>
-              <StartCmdLineArguments>
-              </StartCmdLineArguments>
-              <StartWorkingDirectory>
-              </StartWorkingDirectory>
-              <EnableENC>False</EnableENC>
-              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
-            </WebProjectProperties>
-          </FlavorProperties>
-        </VisualStudio>
-    </ProjectExtensions>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b79f737b-fde2-470e-8580-b86beee105e9}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>server.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Compile Include="server.js" />
+    <Content Include="views\callback.html" />
+    <Content Include="views\index.html" />
+    <Content Include="public\css\app.css" />
+    <Content Include="public\css\app.min.css" />
+    <Content Include="public\images\bg-footer.png" />
+    <Content Include="public\images\bt-close.png" />
+    <Content Include="public\images\gh-logo.png" />
+    <Content Include="public\images\logo-square.png" />
+    <Content Include="public\images\logo.png" />
+    <Content Include="public\images\lolla_logo-2.png" />
+    <Content Include="public\images\sprite-social.png" />
+    <Content Include="public\images\bg.jpg" />
+    <Content Include="public\images\logo.jpg" />
+    <Content Include="public\images\mob-top-fill.jpg" />
+    <Content Include="public\images\old-logo.jpg" />
+    <Content Include="public\images\top-fill.jpg" />
+    <Content Include="public\images\favicon.ico" />
+    <Compile Include="public\js\app.js" />
+    <Compile Include="public\js\app.min.js" />
+    <Compile Include="public\js\handlebarsjs.1.0.min.js" />
+    <Compile Include="public\js\jquery.1.9.min.js" />
+    <Compile Include="public\js\socket.io.min.js" />
+    <Content Include="public\images\icons\ico-em.png" />
+    <Content Include="public\images\icons\ico-fb.png" />
+    <Content Include="public\images\icons\ico-g.png" />
+    <Content Include="public\images\icons\ico-tt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public" />
+    <Folder Include="public\css" />
+    <Folder Include="public\images" />
+    <Folder Include="public\images\icons" />
+    <Folder Include="public\js" />
+    <Folder Include="views" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
