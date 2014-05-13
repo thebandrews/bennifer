@@ -224,6 +224,7 @@ a:hover {
 }
 #imgContent img {
     width: 100%;
+    border: solid 8px #fff;
 }
 
 /***********
