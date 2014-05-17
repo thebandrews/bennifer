@@ -15,10 +15,15 @@ body {
 	color: #696262;
 	font-family: 'Droid Sans', sans-serif;
 	line-height: 26px;
+<<<<<<< HEAD
 	background: url(../images/body-bg.jpg) repeat;
     background-size: 50px 50px
+=======
+	background: url(../images/body-bg.jpg) repeat 0 0;
+    background-size: cover;
+>>>>>>> 6439d581206a03dd36bf897f6770f3c55de3a1ef
 	text-shadow:0px 0px 1px #fff;
-	height: 100%!important;
+	height: 100%;
 }
 
 a {
@@ -33,7 +38,6 @@ a, a:hover, a:active, a:focus {
 }
 
 img, iframe {
-	background-color: rgba(255, 255, 255, 0.5);
     	border: 1px solid #FFFFFF;
     	padding: 3px;
     	width: 100%;
