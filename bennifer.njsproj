@@ -17,24 +17,25 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
     <Content Include="package.json" />
+    <Content Include="public\css\bootstrap-theme.css" />
+    <Content Include="public\css\bootstrap.css" />
+    <Content Include="public\css\demo.css" />
+    <Content Include="public\css\flexslider.css" />
+    <Content Include="public\css\lightbox.css" />
+    <Content Include="public\css\main.css" />
+    <Content Include="public\css\responsive.css" />
+    <Content Include="public\css\wedding-bliss-bootstrap-skin.css" />
+    <Content Include="public\images\body-bg.jpg" />
+    <Content Include="public\images\header-bg.png" />
     <Content Include="README.md" />
     <Compile Include="server.js" />
     <Content Include="views\callback.html" />
-    <Content Include="views\index.html" />
     <Content Include="public\css\app.css" />
     <Content Include="public\css\app.min.css" />
     <Content Include="public\images\bg-footer.png" />
     <Content Include="public\images\bt-close.png" />
-    <Content Include="public\images\gh-logo.png" />
     <Content Include="public\images\logo-square.png" />
     <Content Include="public\images\logo.png" />
-    <Content Include="public\images\lolla_logo-2.png" />
-    <Content Include="public\images\sprite-social.png" />
-    <Content Include="public\images\bg.jpg" />
-    <Content Include="public\images\logo.jpg" />
-    <Content Include="public\images\mob-top-fill.jpg" />
-    <Content Include="public\images\old-logo.jpg" />
-    <Content Include="public\images\top-fill.jpg" />
     <Content Include="public\images\favicon.ico" />
     <Compile Include="public\js\app.js" />
     <Compile Include="public\js\app.min.js" />
@@ -45,6 +46,7 @@
     <Content Include="public\images\icons\ico-fb.png" />
     <Content Include="public\images\icons\ico-g.png" />
     <Content Include="public\images\icons\ico-tt.png" />
+    <Content Include="views\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public" />
