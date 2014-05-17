@@ -27,7 +27,12 @@
     <Content Include="public\css\wedding-bliss-bootstrap-skin.css" />
     <Content Include="public\images\body-bg.jpg" />
     <Content Include="public\images\header-bg.png" />
+    <Content Include="public\images\hearts.png" />
+    <Content Include="public\images\thebride.jpg" />
+    <Content Include="public\images\thegroom.jpg" />
     <Content Include="README.md" />
+    <Compile Include="public\js\bootstrap-hover-dropdown.min.js" />
+    <Compile Include="public\js\bootstrap.min.js" />
     <Compile Include="server.js" />
     <Content Include="views\callback.html" />
     <Content Include="public\css\app.css" />
