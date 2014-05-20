@@ -268,7 +268,7 @@ nav {
 
 .navbar-inverse {
     background: url(../images/header-bg.png) repeat-x 0 -50px;
-    height: 260px;
+    height: 360px;
     box-shadow: none;
     border: none;
     font-size: 14px;
@@ -368,8 +368,9 @@ nav {
 
 .names {
     font-family: 'Great Vibes',cursive;
-    font-size: 40px;
+    font-size: 52px;
     text-align: center;
+    padding-top: 12px;
 }
 
 /* what happens when the menu is opened in tablet/phone view*/
@@ -551,7 +552,6 @@ nav {
 
 /* the couple photos */
 .couple-photos {
-    margin-top: 12px;
     position: relative;
     margin-left: 10px;
 }
