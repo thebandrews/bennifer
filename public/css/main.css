@@ -574,6 +574,48 @@ nav {
         /*-o-animation-iteration-count: infinite;*/
     }
 
+    .couple-photos .left-pannel {
+        background-color: rgba(0, 0, 0, 0);
+        color: #f07677;
+        font-size: 38px;
+        font-family: 'Cinzel',serif;
+        font-weight: bold;
+        margin-bottom: 1em;
+        border: medium none;
+        left: 0%;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        -webkit-animation-delay: 0.3s;
+        -moz-animation-delay: 0.3s;
+        -o-animation-delay: 0.3s;
+        /*-o-animation-iteration-count: infinite;*/
+    }
+
+    .couple-photos .right-pannel {
+        background-color: rgba(0, 0, 0, 0);
+        color: #f07677;
+        font-size: 38px;
+        font-family: 'Cinzel',serif;
+        font-weight: bold;
+        margin-bottom: 1em;
+        border: medium none;
+        right: 6%;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        -webkit-animation-delay: 0.3s;
+        -moz-animation-delay: 0.3s;
+        -o-animation-delay: 0.3s;
+        /*-o-animation-iteration-count: infinite;*/
+    }
+
     .couple-photos .bride, .couple-photos .groom {
         height: 200px;
     }
