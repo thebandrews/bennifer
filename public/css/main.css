@@ -268,7 +268,7 @@ nav {
 
 .navbar-inverse {
     background: url(../images/header-bg.png) repeat-x 0 -50px;
-    height: 150px;
+    height: 260px;
     box-shadow: none;
     border: none;
     font-size: 14px;
@@ -551,7 +551,7 @@ nav {
 
 /* the couple photos */
 .couple-photos {
-    margin-top: 16px;
+    margin-top: 12px;
     position: relative;
     margin-left: 10px;
 }
